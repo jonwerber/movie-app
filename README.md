@@ -1,3 +1,7 @@
 # movie test app
-open directory 
-npm install; npm run
+
+#prereqs
+nodej
+
+#to view project,
+npm install; npm run , it will load on localhost:8000
