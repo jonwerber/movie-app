@@ -1,0 +1,35 @@
+<div id="flex-container">
+<div id="nav">
+    <img src="http://www.clker.com/cliparts/c/h/v/u/S/N/film-hi.png">
+    <P>Search for (almost) any movie!</P>
+    <input ng-model="movie"> <button ng-click="getMovieInfo()"> GO! </button><br/>
+    <p> Or try your luck with a random genre film...</p>
+    <span ng-click="randomMovie(animated)" class="film-button">Animated</span>,
+    <span ng-click="randomMovie(mindBending)" class="film-button">Mind Benders</span>,
+    <span ng-click="randomMovie(comingOfAge)" class="film-button">Coming of Age</span>,
+    <span ng-click="randomMovie(classics)" class="film-button">classics</span>,
+
+</div>
+<div id="content">
+    <youtube ng-init="getMovieInfo()" width="{{yt.width}}" height="{{yt.height}}" videoid="{{yt.videoid}}"></youtube>
+
+    <div id="inner-content">
+    <div id="film-header">
+
+    <div id="film-right">
+    <p class="film-title">{{movieObj.title}}</p>
+    <p class="film-basics">{{movieObj.year}}, {{movieObj.genre}}</p>
+
+
+    <span class="film-basics">Starring    </span> <span class="film-people">{{movieObj.actors}}</span><br/>
+    <span class="film-basics">Written by  </span> <span class="film-people">{{movieObj.writer}}</span>
+    <span class="film-basics">Directed by </span> <span class="film-people">{{movieObj.director}}</span><br/>
+        <p class="film-description">{{movieObj.plot}}</p>
+    </div>
+        <img src="{{movieObj.poster}}">
+
+    </div>
+
+    </div>
+    </div>
+</div>

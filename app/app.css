@@ -1,0 +1,136 @@
+/*font-family: 'Abril Fatface', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Libre Baskerville', serif;*/
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #561416;
+    color: #eef2e4;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 28px;
+}
+P {
+    margin: 3px;
+}
+#nav {
+    text-align: center;
+}
+@media (min-width: 800px) {
+    #flex-container{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: flex-start;
+    }
+    #nav {
+        height: 100%;
+        width: 33.3%;
+
+    }
+    #nav img {
+        margin-top: 10%;
+        max-width: 95%;
+    }
+
+    #content {
+        width: 66.6%;
+        flex-shrink: 0;
+    }
+}
+@media (max-width: 800px) {
+    #flex-container{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: flex-start;
+    }
+    #nav {
+        width: 100%;
+        flex-shrink: 0;
+    }
+    #nav img {
+        max-height: 50px;
+    }
+
+    #content {
+        width: 100%;
+        flex-shrink: 0;
+    }
+}
+
+#film-header {
+    display: flex;
+    align-content: space-between;
+}
+@media (min-width: 800px) {
+    #film-header img {
+        right: 0;
+        max-height: 300px;
+    }
+}
+@media (max-width: 800px) {
+    #film-header img {
+        right: 0;
+        max-height: 200px;
+    }
+}
+#film-right{
+    padding-right: 10px;
+    text-align: right;
+}
+@media (min-width: 800px) {
+
+    input, button {
+        height: 70px;
+        font-size: 50px;
+        border: 0;
+        background-color: black;
+        color: white;
+    }
+}
+@media (max-width: 800px) {
+    input, button {
+        height: 45px;
+        font-size: 36px;
+        border: 0;
+        background-color: black;
+        color: white;
+    }
+}
+
+.film-title {
+    margin: 0 5px 0 0;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 48px;
+
+}
+.film-basics{
+    margin: 0;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 28px;
+    line-height: 20px;
+    color: #edf2f0;
+}
+.film-people{
+    font-family: 'Six Caps', sans-serif;
+    font-size: 22px;
+    line-height: 18px;
+    color: #f2a497;
+}
+.film-description{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+    color: #edf2f0;
+}
+.film-button {
+    line-height: 60px;
+    font-size: 36px;
+}
+.film-button:hover{
+    line-height: 60px;
+    font-size: 48px;
+}
