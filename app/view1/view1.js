@@ -28,6 +28,7 @@ $scope.randomMovie = function(genre){
             height: Math.round((((window.innerWidth)*.66)/16)*9),
             videoid: "RS0KyTZ3Ie4",
         };
+
     } else {
         $scope.yt = {
             width: '100%',
